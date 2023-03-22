@@ -26,66 +26,66 @@ adminController.getAppointments = async(req, res)=>{
 }
 
 
-adminController.createRole = async (req,res) => {
-    try {
-        // const name = req.body.name
-        const { name } = req.body
+// adminController.createRole = async (req,res) => {
+//     try {
+//         // const name = req.body.name
+//         const { name } = req.body
 
-        const newRol = await Role.create(
-            {
-                name: name,
-            }
-        )
+//         const newRol = await Role.create(
+//             {
+//                 name: name,
+//             }
+//         )
 
-        return res.json(newRol)
-    } catch (error) {
-        return res.status(500).json(error)
-    }
-}
+//         return res.json(newRol)
+//     } catch (error) {
+//         return res.status(500).json(error)
+//     }
+// }
 
-adminController.updateRole = async (req,res) => {
-    try {
-        const { name } = req.body
+// adminController.updateRole = async (req,res) => {
+//     try {
+//         const { name } = req.body
 
-        const newRol = await Role.update(
-            {
-                name: name,
-            }
-        )
+//         const newRol = await Role.update(
+//             {
+//                 name: name,
+//             }
+//         )
 
-        return res.json(newRol)
-    } catch (error) {
-        return res.status(500).json(error)
-    }
-}
+//         return res.json(newRol)
+//     } catch (error) {
+//         return res.status(500).json(error)
+//     }
+// }
 
-adminController.deleteRole = async (req,res) => {
-    try {
-        const { id, name } = req.body
+// adminController.deleteRole = async (req,res) => {
+//     try {
+//         const { id, name } = req.body
 
-        const newRol = await Role.destroy(
-            {
-                id: id,
-                name: name,
-            }
-        )
+//         const newRol = await Role.destroy(
+//             {
+//                 id: id,
+//                 name: name,
+//             }
+//         )
 
-        return res.json(newRol)
-    } catch (error) {
-        return res.status(500).json(error)
-    }
-}
+//         return res.json(newRol)
+//     } catch (error) {
+//         return res.status(500).json(error)
+//     }
+// }
 
 
-adminController.getAllRole = async (req,res) => {
-    try {
-        const { name } = req.body
+// adminController.getAllRole = async (req,res) => {
+//     try {
+//         const { name } = req.body
 
-        const newRol = await Role.findAll()
-        return res.json(newRol)
-    } catch (error) {
-        return res.status(500).json(error)
-    }
-}
+//         const newRol = await Role.findAll()
+//         return res.json(newRol)
+//     } catch (error) {
+//         return res.status(500).json(error)
+//     }
+// }
 
 module.exports = adminController;
