@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marcos1326/Backend-Clinica-Dental.git"
+    "url": "git+https://github.com/s0usaa/Backend-Clinica-Dental.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marcos1326/Backend-Clinica-Dental/issues"
+    "url": "https://github.com/s0usaa/Backend-Clinica-Dental/issues"
   },
-  "homepage": "https://github.com/Marcos1326/Backend-Clinica-Dental#readme",
+  "homepage": "https://github.com/s0usaa/Backend-Clinica-Dental#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
