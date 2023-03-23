@@ -11,14 +11,17 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        required: true
+        required: true,
+        len: [2,18]
       },
       surname: {
         type: Sequelize.STRING,
-        required:true
+        required:true,
+        len: [2,50],
       },
       phone: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        max: 9
       },
       email: {
         type: Sequelize.STRING,
@@ -27,7 +30,8 @@ module.exports = {
       },
       password:{
         type: Sequelize.STRING,
-        required:true
+        required:true,
+        len: [8,16],
       },
       roles_id: {
         type: Sequelize.INTEGER,
