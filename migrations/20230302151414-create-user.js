@@ -31,7 +31,7 @@ module.exports = {
       password:{
         type: Sequelize.STRING,
         required:true,
-        len: [8,16],
+        len: [5,16],
       },
       roles_id: {
         type: Sequelize.INTEGER,
